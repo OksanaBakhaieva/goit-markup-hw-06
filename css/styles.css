@@ -63,14 +63,35 @@ textarea {
 textarea {
   resize: none;
 }
+
+/*Phone screen*/
 .container {
-  width: 1158px;
+  max-width: 288px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 
-/*Header*/
+/* Tablet screen*/
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+  }
+}
+
+/* Laptop screen */
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* Header
 .header {
   border-bottom: 1px solid var(--cornflower);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -164,9 +185,9 @@ textarea {
 .address-link:hover,
 .address-link:focus {
   color: var(--ocean);
-}
+} */
 
-/*Hero Section*/
+/* Hero Section
 .hero-section {
   display: block;
   padding: 188px 0 188px;
@@ -217,10 +238,10 @@ textarea {
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--ocean);
-}
+} */
 
 /*Features Section*/
-.features-section {
+/* .features-section {
   padding: 120px 0;
   background-color: var(--white);
   text-align: left;
@@ -273,7 +294,7 @@ textarea {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: left;
-}
+} */
 
 /*Team Section*/
 .team-section {
@@ -366,7 +387,7 @@ textarea {
 }
 
 /*Portfolio Section*/
-.portfolio-section {
+/* .portfolio-section {
   padding: 120px 0;
 }
 
@@ -452,10 +473,10 @@ textarea {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: left;
-}
+} */
 
 /*Footer*/
-footer {
+/* footer {
   color: var(--cloud);
   background-color: var(--navy-blue);
   padding: 100px 0;
@@ -504,7 +525,7 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 16px;
-}
+} 
 
 .social-media-link {
   display: flex;
@@ -524,10 +545,10 @@ footer {
 .social-media-link:hover,
 .social-media-link:focus {
   background-color: var(--hover-footer);
-}
+}*/
 
 /*Form in footer*/
-.subscribe-container {
+/* .subscribe-container {
   margin-left: 80px;
 }
 
@@ -580,10 +601,10 @@ footer {
   margin-left: 16px;
   color: var(--white);
   fill: var(--white);
-}
+} */
 
 /*Modal*/
-.backdrop {
+/* .backdrop {
   position: fixed;
   inset: 0;
   display: flex;
@@ -875,4 +896,4 @@ footer {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-}
+} */
